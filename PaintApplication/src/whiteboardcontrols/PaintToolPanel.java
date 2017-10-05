@@ -33,9 +33,9 @@ public class PaintToolPanel extends JPanel
         
         this.toolOptionPanel = toolOptionPanel;
 
-        buttons = new ToolButton[6];
+        buttons = new ToolButton[7];
 
-        Icon[] icons = new ImageIcon[6];
+        Icon[] icons = new ImageIcon[7];
         String[] names = {"pencil.png", "eraser.png"};
         for(int i=0; i<icons.length; i++)
         {
@@ -47,6 +47,7 @@ public class PaintToolPanel extends JPanel
         Icon oval        = new ImageIcon(getClass().getResource("oval.png"));
         Icon polygon     = new ImageIcon(getClass().getResource("rounded_rectangle.png"));
         Icon lineTool    = new ImageIcon(getClass().getResource("line.png"));
+        Icon writeTool    = new ImageIcon(getClass().getResource("write.png"));
 
         buttons[0] = new ToolButton(pencil, Tool.PENCIL);
         buttons[1] = new ToolButton(eraser, Tool.ERASER);
@@ -54,6 +55,7 @@ public class PaintToolPanel extends JPanel
         buttons[3] = new ToolButton(oval, Tool.OVAL);
         buttons[4] = new ToolButton(lineTool, Tool.LINE);
         buttons[5] = new ToolButton(polygon, Tool.ROUND_RECT);
+        buttons[6] = new ToolButton(writeTool, Tool.WRITER);
 
         for(int i=0; i<buttons.length; i++)
         {

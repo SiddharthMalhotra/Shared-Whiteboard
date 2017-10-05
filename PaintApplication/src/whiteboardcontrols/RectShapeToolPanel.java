@@ -89,6 +89,12 @@ public class RectShapeToolPanel extends DragShapeToolPanel
                         Client.paint.drawPanel.tool.setStrokeStyle(StrokeStyle.FILL_OVAL);
                         break;
                     }
+                    case WRITER:
+                    {
+                        Client.paint.drawPanel.tool.setStrokeStyle(StrokeStyle.FILL_RECT);
+                        break;
+                    }
+                    
                 }
             }
             if (event.getSource()==unFillButton)
@@ -108,6 +114,11 @@ public class RectShapeToolPanel extends DragShapeToolPanel
                     case OVAL:
                     {
                         Client.paint.drawPanel.tool.setStrokeStyle(StrokeStyle.OPEN_OVAL);
+                        break;
+                    }
+                    case WRITER:
+                    {
+                        Client.paint.drawPanel.tool.setStrokeStyle(StrokeStyle.OPEN_RECT);
                         break;
                     }
                 }
